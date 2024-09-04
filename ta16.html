@@ -1,0 +1,19 @@
+<!DOCTYPE html><html>
+    <head>
+    </head>
+    <body>
+        <p id="TextoAOcultar">W de akali|Q de twitch</p>
+        <button id="OcultadMostrar">Ocultar/Mostrar</button>
+        <script>
+            const boton = document.getElementById("OcultadMostrar");
+            boton.addEventListener("click", () => {
+            const texto = document.getElementById("TextoAOcultar")
+            if (texto.style.visibility === 'visible' || texto.style.visibility === '') {
+                texto.style.visibility = 'hidden';
+            } else {
+                texto.style.visibility = 'visible';
+            }
+            });
+        </script>
+    </body>
+</html>
